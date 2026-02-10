@@ -25,11 +25,28 @@ Expensive defaults = burned quotas on routine work. Cheap defaults with scoped f
 
 Uses cheap embeddings (`text-embedding-3-small`) to search your memory files.
 
+```json
+"memorySearch": {
+  "sources": ["memory", "sessions"],
+  "experimental": { "sessionMemory": true },
+  "provider": "openai",
+  "model": "text-embedding-3-small"
+}
+```
+
 **Cost comparison:**
 - Thousands of searches: ~$0.10
 - Using premium models for the same: $5-10+
 
 ### Context Pruning (`contextPruning`)
+
+```json
+"contextPruning": {
+  "mode": "cache-ttl",
+  "ttl": "6h",
+  "keepLastAssistants": 3
+}
+```
 
 **`cache-ttl` mode:**
 - Keeps prompt cache valid for 6 hours
@@ -40,6 +57,18 @@ Uses cheap embeddings (`text-embedding-3-small`) to search your memory files.
 Without this, you'll hit token limits faster and pay for re-processing the same context repeatedly.
 
 ### Compaction (`compaction.memoryFlush`)
+
+```json
+"compaction": {
+  "mode": "default",
+  "memoryFlush": {
+    "enabled": true,
+    "softThresholdTokens": 40000,
+    "prompt": "Distill this session to memory/YYYY-MM-DD.md. Focus on decisions, state changes, lessons, blockers. If nothing worth storing: NO_FLUSH",
+    "systemPrompt": "Extract only what is worth remembering. No fluff."
+  }
+}
+```
 
 **What it does:**
 When context hits `softThresholdTokens` (40k), the agent distills the session into `memory/YYYY-MM-DD.md`.
@@ -108,16 +137,39 @@ Redacts sensitive data (API keys, tokens) from tool output in logs.
 - `"tools"` - redact tool output only (recommended)
 - `"all"` - aggressive redaction (can make debugging harder)
 
-### Custom Model Providers (Synthetic example)
+### Custom Model Providers (NVIDIA NIM example)
 
-The `models.providers.synthetic` section shows how to add a custom provider.
+You can add custom providers like NVIDIA NIM to access additional models:
 
-**Why Synthetic:**
-- Free access to GLM 4.7 and Kimi K2.5
-- Hosted models, no local hardware needed
-- Good fallback options when Anthropic quotas are exhausted
+```json
+"models": {
+  "mode": "merge",
+  "providers": {
+    "nvidia-nim": {
+      "baseUrl": "https://integrate.api.nvidia.com/v1",
+      "api": "openai",
+      "models": [
+        {
+          "id": "nvidia/moonshotai/kimi-k2.5",
+          "name": "Kimi K2.5 (NVIDIA NIM)",
+          "reasoning": false,
+          "input": ["text"],
+          "cost": {
+            "input": 0,
+            "output": 0
+          },
+          "contextWindow": 256000,
+          "maxTokens": 8192
+        }
+      ]
+    }
+  }
+}
+```
 
-See the full guide for referral links and setup details.
+**Rate limits:** NVIDIA NIM free tier has 40 RPM limit. Use sparingly or as fallback.
+
+**Auth:** Set `NVIDIA_API_KEY` in environment or credentials directory.
 
 ## File Structure
 
@@ -209,7 +261,7 @@ grep -r "sk-" ~/.openclaw/  # Should find nothing in logs
 After you're running, check usage regularly:
 
 ```bash
-# Check quotas (if you have the script)
+# Check quotas (optional script)
 check-quotas
 
 # Monitor costs in provider dashboards
@@ -217,6 +269,8 @@ check-quotas
 # - Anthropic: https://console.anthropic.com/settings/usage
 # - OpenAI: https://platform.openai.com/usage
 ```
+
+**Optional:** See [check-quotas.sh](check-quotas.sh) for a script that checks quota usage across providers.
 
 Target: $45-50/month for moderate usage (main session + occasional subagents).
 
