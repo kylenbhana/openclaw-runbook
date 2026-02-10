@@ -1,19 +1,22 @@
 # OpenClaw Runbook (Non-Hype Edition)
 
+> Tested with OpenClaw 2026.2.x  
+> AI-assisted documentation created with Claude
+
 This repo contains a practical guide for running OpenClaw day to day without burning money, quotas, or your sanity.
 
 It is not an official guide.
-It is not a “best setup.”
+It is not a "best setup."
 It reflects how I actually run OpenClaw after breaking it repeatedly and wanting something stable, predictable, and boring in the best way.
 
-If you are looking for flashy demos or “this changes everything” energy, this probably isn’t it.
+If you are looking for flashy demos or "this changes everything" energy, this probably isn't it.
 
 ## What this is
 
 - A runbook for people who want OpenClaw to run for weeks, not minutes
 - Opinionated, but explicit about tradeoffs
 - Focused on coordinator vs worker models, cost control, memory boundaries, and guardrails
-- Written from the “post-honeymoon” phase
+- Written from the "post-honeymoon" phase
 
 ## What this is not
 
