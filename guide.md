@@ -292,12 +292,14 @@ Some providers I use offer referral programs. Included here for people who ask. 
 
 Z.ai provides access to GLM 4.6 and 4.7, which I use as capable, lower-cost options for agents that don't need premium models.
 
-Referral link: [https://z.ai/subscribe?ic=6PVT1IFEZT](https://z.ai/subscribe?ic=6PVT1IFEZT)
+- Direct link: [https://z.ai/subscribe](https://z.ai/subscribe)
+- Referral link (supports this guide): [https://z.ai/subscribe?ic=6PVT1IFEZT](https://z.ai/subscribe?ic=6PVT1IFEZT)
 
 ### Synthetic
 
 Synthetic hosts several open-source and partner models under one subscription, including GLM 4.7 and Kimi 2.5, plus additional models via Fireworks and Together.
 
-Referral link: [https://synthetic.new/?referral=p7ZFKQRrWliKZGa](https://synthetic.new/?referral=p7ZFKQRrWliKZGa)
+- Direct link: [https://synthetic.new](https://synthetic.new)
+- Referral link (supports this guide): [https://synthetic.new/?referral=p7ZFKQRrWliKZGa](https://synthetic.new/?referral=p7ZFKQRrWliKZGa)
 
-Use whichever links you're comfortable with, or none at all.
+Use whichever links you prefer. Referrals help support this guide but aren't required.
