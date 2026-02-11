@@ -46,6 +46,31 @@ The `examples/` directory contains actionable templates and references:
 - **[config-example-guide.md](examples/config-example-guide.md)** - Config section reference
 - **[check-quotas.sh](examples/check-quotas.sh)** - Script to check API quota usage across providers
 
+## Showcases
+
+The `showcases/` directory contains copy-paste ready automation patterns from the community:
+
+- **[daily-brief](showcases/daily-brief.md)** - Morning summary with weather, calendar, tasks
+- **[idea-pipeline](showcases/idea-pipeline.md)** - Overnight research on captured ideas
+- **[linkedin-drafter](showcases/linkedin-drafter.md)** - Weekly content generation
+- **[tech-discoveries](showcases/tech-discoveries.md)** - Curated tech news
+- **[homelab-access](showcases/homelab-access.md)** - Safe remote SSH via Telegram
+- **[agent-orchestrator](showcases/agent-orchestrator.md)** - Route coding tasks to optimal tools
+
+Each showcase is designed to be immediately usable. Copy the cron job, replace the placeholders, and deploy.
+
+Have an automation that works well? See [showcases/template.md](showcases/template.md) to submit your own.
+
+## Share This
+
+If this guide helped you, please consider:
+
+- **Sharing it** with others who might find it useful
+- **Linking back** if you reference it in blog posts, videos, or other resources
+- **Submitting your own showcases** so others can learn from your setup
+
+This is a community resource. The more people contribute, the better it gets for everyone.
+
 ## Contributing
 
 Contributions are welcome, but this is not a free-for-all.
