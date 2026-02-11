@@ -129,8 +129,13 @@
         "maxConcurrent": 8
       }
     },
-    "named": {
-      "monitor": {
+    "list": [
+      {
+        "id": "main",
+        "default": true
+      },
+      {
+        "id": "monitor",
         "model": {
           "primary": "openai/gpt-5-nano",
           "fallbacks": [
@@ -140,18 +145,13 @@
         },
         "systemPromptFile": "workspace/agents/monitor.md"
       },
-      "researcher": {
+      {
+        "id": "researcher",
         "model": {
           "primary": "kimi-coding/k2p5",
           "fallbacks": ["synthetic/hf:zai-org/GLM-4.7", "openai/gpt-5-mini"]
         },
         "systemPromptFile": "workspace/agents/researcher.md"
-      }
-    },
-    "list": [
-      {
-        "id": "main",
-        "default": true
       }
     ]
   },
