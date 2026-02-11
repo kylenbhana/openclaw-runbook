@@ -71,6 +71,21 @@ If this guide helped you, please consider:
 
 This is a community resource. The more people contribute, the better it gets for everyone.
 
+## Community Resources
+
+Other helpful OpenClaw resources from the community:
+
+**Official & Discovery**
+- **[ClawHub](https://clawhub.com)** - Discover and share AgentSkills
+- **[OpenClaw Docs](https://docs.openclaw.ai)** - Official documentation
+
+**Awesome Lists**
+- **[awesome-openclaw-usecases](https://github.com/hesamsheikh/awesome-openclaw-usecases)** - Real-world use cases and examples
+- **[awesome-openclaw](https://github.com/SamurAIGPT/awesome-openclaw)** - Curated list of tools and resources
+- **[awesome-openclaw-skills](https://github.com/VoltAgent/awesome-openclaw-skills)** - Community-contributed skills
+
+These complement this runbook with more examples, skills, and community patterns.
+
 ## Contributing
 
 Contributions are welcome, but this is not a free-for-all.
