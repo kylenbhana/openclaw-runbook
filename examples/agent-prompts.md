@@ -399,8 +399,7 @@ Add specialized agents to your `openclaw.json` config:
             "openrouter/google/gemini-2.5-flash-lite",
             "anthropic/claude-haiku-4-5"
           ]
-        },
-        "systemPromptFile": "workspace/agents/monitor.md"
+        }
       },
       {
         "id": "researcher",
@@ -410,13 +409,28 @@ Add specialized agents to your `openclaw.json` config:
             "synthetic/hf:zai-org/GLM-4.7",
             "openai/gpt-5-mini"
           ]
-        },
-        "systemPromptFile": "workspace/agents/researcher.md"
+        }
       }
     ]
   }
 }
 ```
+
+## Sub-Agent System Prompts
+
+**Important:** Sub-agents defined in `agents.list` do NOT use `systemPromptFile`. 
+
+Instead, OpenClaw injects workspace bootstrap files into the context:
+
+- **Main agent:** Gets all bootstrap files (AGENTS.md, SOUL.md, TOOLS.md, IDENTITY.md, USER.md)
+- **Sub-agents (agents.list):** Only get AGENTS.md and TOOLS.md injected
+
+To customize a sub-agent's behavior:
+1. Create specific instructions in AGENTS.md (all agents see this)
+2. Or spawn the agent with a task-specific prompt in the `message` field
+3. Or use skills to provide specialized instructions
+
+The `model` configuration in `agents.list` only controls which model is used, not the system prompt.
 
 ## General Agent Configuration Tips
 
