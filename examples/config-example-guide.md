@@ -4,7 +4,7 @@ This sanitized config shows the key settings referenced in the [OpenClaw guide](
 
 ## Quick Start
 
-1. Copy `config-example.json` to `~/.openclaw/openclaw.json`
+1. Copy `sanitized-config.json` to `~/.openclaw/openclaw.json`
 2. Replace all `YOUR_*` placeholders with real values
 3. Run `openclaw doctor --fix` to validate
 4. Run `openclaw security audit --deep` to check for issues
